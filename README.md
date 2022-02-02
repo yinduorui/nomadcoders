@@ -1,2 +1,2 @@
-# Mini
+# Mini project is running...
 mini project
