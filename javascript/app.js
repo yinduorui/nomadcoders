@@ -9,8 +9,11 @@ function onLoginSubmit(event) {
   //submit시 자동 새로고침을 방지하고자 사용함
   loginForm.classList.add("hidden");
   const username = loginInput.value;
-  // greeting.innerText = "Hello " + username;
+  localStorage.setItem("username", username); //개발자도구>Application>Local Strorage 확인!
+  //불러오기: localStorage.getItem("key name")
+  //삭제: localStorage.removeItem("key name")
   greeting.innerText = `Hello ${username} keep going`; //추천, 백틱(`)
+  // greeting.innerText = "Hello " + username; 동일
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
