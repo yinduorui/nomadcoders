@@ -10,3 +10,7 @@ h1 {
   color: tomato;
   transition: color 0.5s ease-in-out;
 }
+
+.font {
+  font-family: "Courier New", Courier, monospace;
+}
